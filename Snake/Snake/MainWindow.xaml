@@ -1,0 +1,353 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        
+        Title="Snake" Height="512" Width="512">
+
+    <Window.Resources>
+        <Style TargetType="Border">
+            <Setter Property="BorderThickness" Value="2" />
+
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="Playground">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Canvas x:Name="s00z00"  Background="Black" Grid.Column="00" Grid.Row="0" />
+        <Canvas x:Name="s01z00"  Background="Black" Grid.Column="01" Grid.Row="0" />
+        <Canvas x:Name="s02z00"  Background="Black" Grid.Column="02" Grid.Row="0" />
+        <Canvas x:Name="s03z00"  Background="Black" Grid.Column="03" Grid.Row="0" />
+        <Canvas x:Name="s04z00"  Background="Black" Grid.Column="04" Grid.Row="0" />
+        <Canvas x:Name="s05z00"  Background="Black" Grid.Column="05" Grid.Row="0" />
+        <Canvas x:Name="s06z00"  Background="Black" Grid.Column="06" Grid.Row="0" />
+        <Canvas x:Name="s07z00"  Background="Black" Grid.Column="07" Grid.Row="0" />
+        <Canvas x:Name="s08z00"  Background="Black" Grid.Column="08" Grid.Row="0" />
+        <Canvas x:Name="s09z00"  Background="Black" Grid.Column="09" Grid.Row="0" />
+        <Canvas x:Name="s10z00"  Background="Black" Grid.Column="10" Grid.Row="0" />
+        <Canvas x:Name="s11z00"  Background="Black" Grid.Column="11" Grid.Row="0" />
+        <Canvas x:Name="s12z00"  Background="Black" Grid.Column="12" Grid.Row="0" />
+        <Canvas x:Name="s13z00"  Background="Black" Grid.Column="13" Grid.Row="0" />
+        <Canvas x:Name="s14z00"  Background="Black" Grid.Column="14" Grid.Row="0" />
+        <Canvas x:Name="s15z00"  Background="Black" Grid.Column="15" Grid.Row="0" />
+        <Canvas x:Name="s16z00"  Background="Black" Grid.Column="16" Grid.Row="0" />
+
+        <Canvas x:Name="s00z01"  Background="Black" Grid.Column="00" Grid.Row="1" />
+        <Canvas x:Name="s01z01"  Background="Black" Grid.Column="01" Grid.Row="1" />
+        <Canvas x:Name="s02z01"  Background="Black" Grid.Column="02" Grid.Row="1" />
+        <Canvas x:Name="s03z01"  Background="Black" Grid.Column="03" Grid.Row="1" />
+        <Canvas x:Name="s04z01"  Background="Black" Grid.Column="04" Grid.Row="1" />
+        <Canvas x:Name="s05z01"  Background="Black" Grid.Column="05" Grid.Row="1" />
+        <Canvas x:Name="s06z01"  Background="Black" Grid.Column="06" Grid.Row="1" />
+        <Canvas x:Name="s07z01"  Background="Black" Grid.Column="07" Grid.Row="1" />
+        <Canvas x:Name="s08z01"  Background="Black" Grid.Column="08" Grid.Row="1" />
+        <Canvas x:Name="s09z01"  Background="Black" Grid.Column="09" Grid.Row="1" />
+        <Canvas x:Name="s10z01"  Background="Black" Grid.Column="10" Grid.Row="1" />
+        <Canvas x:Name="s11z01"  Background="Black" Grid.Column="11" Grid.Row="1" />
+        <Canvas x:Name="s12z01"  Background="Black" Grid.Column="12" Grid.Row="1" />
+        <Canvas x:Name="s13z01"  Background="Black" Grid.Column="13" Grid.Row="1" />
+        <Canvas x:Name="s14z01"  Background="Black" Grid.Column="14" Grid.Row="1" />
+        <Canvas x:Name="s15z01"  Background="Black" Grid.Column="15" Grid.Row="1" />
+        <Canvas x:Name="s16z01"  Background="Black" Grid.Column="16" Grid.Row="1" />
+
+        <Canvas x:Name="s00z02"  Background="Black" Grid.Column="00" Grid.Row="2" />
+        <Canvas x:Name="s01z02"  Background="Black" Grid.Column="01" Grid.Row="2" />
+        <Canvas x:Name="s02z02"  Background="Black" Grid.Column="02" Grid.Row="2" />
+        <Canvas x:Name="s03z02"  Background="Black" Grid.Column="03" Grid.Row="2" />
+        <Canvas x:Name="s04z02"  Background="Black" Grid.Column="04" Grid.Row="2" />
+        <Canvas x:Name="s05z02"  Background="Black" Grid.Column="05" Grid.Row="2" />
+        <Canvas x:Name="s06z02"  Background="Black" Grid.Column="06" Grid.Row="2" />
+        <Canvas x:Name="s07z02"  Background="Black" Grid.Column="07" Grid.Row="2" />
+        <Canvas x:Name="s08z02"  Background="Black" Grid.Column="08" Grid.Row="2" />
+        <Canvas x:Name="s09z02"  Background="Black" Grid.Column="09" Grid.Row="2" />
+        <Canvas x:Name="s10z02"  Background="Black" Grid.Column="10" Grid.Row="2" />
+        <Canvas x:Name="s11z02"  Background="Black" Grid.Column="11" Grid.Row="2" />
+        <Canvas x:Name="s12z02"  Background="Black" Grid.Column="12" Grid.Row="2" />
+        <Canvas x:Name="s13z02"  Background="Black" Grid.Column="13" Grid.Row="2" />
+        <Canvas x:Name="s14z02"  Background="Black" Grid.Column="14" Grid.Row="2" />
+        <Canvas x:Name="s15z02"  Background="Black" Grid.Column="15" Grid.Row="2" />
+        <Canvas x:Name="s16z02"  Background="Black" Grid.Column="16" Grid.Row="2" />
+
+        <Canvas x:Name="s00z03"  Background="Black" Grid.Column="00" Grid.Row="3" />
+        <Canvas x:Name="s01z03"  Background="Black" Grid.Column="01" Grid.Row="3" />
+        <Canvas x:Name="s02z03"  Background="Black" Grid.Column="02" Grid.Row="3" />
+        <Canvas x:Name="s03z03"  Background="Black" Grid.Column="03" Grid.Row="3" />
+        <Canvas x:Name="s04z03"  Background="Black" Grid.Column="04" Grid.Row="3" />
+        <Canvas x:Name="s05z03"  Background="Black" Grid.Column="05" Grid.Row="3" />
+        <Canvas x:Name="s06z03"  Background="Black" Grid.Column="06" Grid.Row="3" />
+        <Canvas x:Name="s07z03"  Background="Black" Grid.Column="07" Grid.Row="3" />
+        <Canvas x:Name="s08z03"  Background="Black" Grid.Column="08" Grid.Row="3" />
+        <Canvas x:Name="s09z03"  Background="Black" Grid.Column="09" Grid.Row="3" />
+        <Canvas x:Name="s10z03"  Background="Black" Grid.Column="10" Grid.Row="3" />
+        <Canvas x:Name="s11z03"  Background="Black" Grid.Column="11" Grid.Row="3" />
+        <Canvas x:Name="s12z03"  Background="Black" Grid.Column="12" Grid.Row="3" />
+        <Canvas x:Name="s13z03"  Background="Black" Grid.Column="13" Grid.Row="3" />
+        <Canvas x:Name="s14z03"  Background="Black" Grid.Column="14" Grid.Row="3" />
+        <Canvas x:Name="s15z03"  Background="Black" Grid.Column="15" Grid.Row="3" />
+        <Canvas x:Name="s16z03"  Background="Black" Grid.Column="16" Grid.Row="3" />
+
+        <Canvas x:Name="s00z04"  Background="Black" Grid.Column="00" Grid.Row="4" />
+        <Canvas x:Name="s01z04"  Background="Black" Grid.Column="01" Grid.Row="4" />
+        <Canvas x:Name="s02z04"  Background="Black" Grid.Column="02" Grid.Row="4" />
+        <Canvas x:Name="s03z04"  Background="Black" Grid.Column="03" Grid.Row="4" />
+        <Canvas x:Name="s04z04"  Background="Black" Grid.Column="04" Grid.Row="4" />
+        <Canvas x:Name="s05z04"  Background="Black" Grid.Column="05" Grid.Row="4" />
+        <Canvas x:Name="s06z04"  Background="Black" Grid.Column="06" Grid.Row="4" />
+        <Canvas x:Name="s07z04"  Background="Black" Grid.Column="07" Grid.Row="4" />
+        <Canvas x:Name="s08z04"  Background="Black" Grid.Column="08" Grid.Row="4" />
+        <Canvas x:Name="s09z04"  Background="Black" Grid.Column="09" Grid.Row="4" />
+        <Canvas x:Name="s10z04"  Background="Black" Grid.Column="10" Grid.Row="4" />
+        <Canvas x:Name="s11z04"  Background="Black" Grid.Column="11" Grid.Row="4" />
+        <Canvas x:Name="s12z04"  Background="Black" Grid.Column="12" Grid.Row="4" />
+        <Canvas x:Name="s13z04"  Background="Black" Grid.Column="13" Grid.Row="4" />
+        <Canvas x:Name="s14z04"  Background="Black" Grid.Column="14" Grid.Row="4" />
+        <Canvas x:Name="s15z04"  Background="Black" Grid.Column="15" Grid.Row="4" />
+        <Canvas x:Name="s16z04"  Background="Black" Grid.Column="16" Grid.Row="4" />
+
+        <Canvas x:Name="s00z05"  Background="Black" Grid.Column="00" Grid.Row="5" />
+        <Canvas x:Name="s01z05"  Background="Black" Grid.Column="01" Grid.Row="5" />
+        <Canvas x:Name="s02z05"  Background="Black" Grid.Column="02" Grid.Row="5" />
+        <Canvas x:Name="s03z05"  Background="Black" Grid.Column="03" Grid.Row="5" />
+        <Canvas x:Name="s04z05"  Background="Black" Grid.Column="04" Grid.Row="5" />
+        <Canvas x:Name="s05z05"  Background="Black" Grid.Column="05" Grid.Row="5" />
+        <Canvas x:Name="s06z05"  Background="Black" Grid.Column="06" Grid.Row="5" />
+        <Canvas x:Name="s07z05"  Background="Black" Grid.Column="07" Grid.Row="5" />
+        <Canvas x:Name="s08z05"  Background="Black" Grid.Column="08" Grid.Row="5" />
+        <Canvas x:Name="s09z05"  Background="Black" Grid.Column="09" Grid.Row="5" />
+        <Canvas x:Name="s10z05"  Background="Black" Grid.Column="10" Grid.Row="5" />
+        <Canvas x:Name="s11z05"  Background="Black" Grid.Column="11" Grid.Row="5" />
+        <Canvas x:Name="s12z05"  Background="Black" Grid.Column="12" Grid.Row="5" />
+        <Canvas x:Name="s13z05"  Background="Black" Grid.Column="13" Grid.Row="5" />
+        <Canvas x:Name="s14z05"  Background="Black" Grid.Column="14" Grid.Row="5" />
+        <Canvas x:Name="s15z05"  Background="Black" Grid.Column="15" Grid.Row="5" />
+        <Canvas x:Name="s16z05"  Background="Black" Grid.Column="16" Grid.Row="5" />
+
+        <Canvas x:Name="s00z06"  Background="Black" Grid.Column="00" Grid.Row="6" />
+        <Canvas x:Name="s01z06"  Background="Black" Grid.Column="01" Grid.Row="6" />
+        <Canvas x:Name="s02z06"  Background="Black" Grid.Column="02" Grid.Row="6" />
+        <Canvas x:Name="s03z06"  Background="Black" Grid.Column="03" Grid.Row="6" />
+        <Canvas x:Name="s04z06"  Background="Black" Grid.Column="04" Grid.Row="6" />
+        <Canvas x:Name="s05z06"  Background="Black" Grid.Column="05" Grid.Row="6" />
+        <Canvas x:Name="s06z06"  Background="Black" Grid.Column="06" Grid.Row="6" />
+        <Canvas x:Name="s07z06"  Background="Black" Grid.Column="07" Grid.Row="6" />
+        <Canvas x:Name="s08z06"  Background="Black" Grid.Column="08" Grid.Row="6" />
+        <Canvas x:Name="s09z06"  Background="Black" Grid.Column="09" Grid.Row="6" />
+        <Canvas x:Name="s10z06"  Background="Black" Grid.Column="10" Grid.Row="6" />
+        <Canvas x:Name="s11z06"  Background="Black" Grid.Column="11" Grid.Row="6" />
+        <Canvas x:Name="s12z06"  Background="Black" Grid.Column="12" Grid.Row="6" />
+        <Canvas x:Name="s13z06"  Background="Black" Grid.Column="13" Grid.Row="6" />
+        <Canvas x:Name="s14z06"  Background="Black" Grid.Column="14" Grid.Row="6" />
+        <Canvas x:Name="s15z06"  Background="Black" Grid.Column="15" Grid.Row="6" />
+        <Canvas x:Name="s16z06"  Background="Black" Grid.Column="16" Grid.Row="6" />
+
+        <Canvas x:Name="s00z07"  Background="Black" Grid.Column="00" Grid.Row="7" />
+        <Canvas x:Name="s01z07"  Background="Black" Grid.Column="01" Grid.Row="7" />
+        <Canvas x:Name="s02z07"  Background="Black" Grid.Column="02" Grid.Row="7" />
+        <Canvas x:Name="s03z07"  Background="Black" Grid.Column="03" Grid.Row="7" />
+        <Canvas x:Name="s04z07"  Background="Black" Grid.Column="04" Grid.Row="7" />
+        <Canvas x:Name="s05z07"  Background="Black" Grid.Column="05" Grid.Row="7" />
+        <Canvas x:Name="s06z07"  Background="Black" Grid.Column="06" Grid.Row="7" />
+        <Canvas x:Name="s07z07"  Background="Black" Grid.Column="07" Grid.Row="7" />
+        <Canvas x:Name="s08z07"  Background="Black" Grid.Column="08" Grid.Row="7" />
+        <Canvas x:Name="s09z07"  Background="Black" Grid.Column="09" Grid.Row="7" />
+        <Canvas x:Name="s10z07"  Background="Black" Grid.Column="10" Grid.Row="7" />
+        <Canvas x:Name="s11z07"  Background="Black" Grid.Column="11" Grid.Row="7" />
+        <Canvas x:Name="s12z07"  Background="Black" Grid.Column="12" Grid.Row="7" />
+        <Canvas x:Name="s13z07"  Background="Black" Grid.Column="13" Grid.Row="7" />
+        <Canvas x:Name="s14z07"  Background="Black" Grid.Column="14" Grid.Row="7" />
+        <Canvas x:Name="s15z07"  Background="Black" Grid.Column="15" Grid.Row="7" />
+        <Canvas x:Name="s16z07"  Background="Black" Grid.Column="16" Grid.Row="7" />
+
+        <Canvas x:Name="s00z08"  Background="Black" Grid.Column="00" Grid.Row="8" />
+        <Canvas x:Name="s01z08"  Background="Black" Grid.Column="01" Grid.Row="8" />
+        <Canvas x:Name="s02z08"  Background="Black" Grid.Column="02" Grid.Row="8" />
+        <Canvas x:Name="s03z08"  Background="Black" Grid.Column="03" Grid.Row="8" />
+        <Canvas x:Name="s04z08"  Background="Black" Grid.Column="04" Grid.Row="8" />
+        <Canvas x:Name="s05z08"  Background="Black" Grid.Column="05" Grid.Row="8" />
+        <Canvas x:Name="s06z08"  Background="Black" Grid.Column="06" Grid.Row="8" />
+        <Canvas x:Name="s07z08"  Background="Black" Grid.Column="07" Grid.Row="8" />
+        <Canvas x:Name="s08z08"  Background="Black" Grid.Column="08" Grid.Row="8" />
+        <Canvas x:Name="s09z08"  Background="Black" Grid.Column="09" Grid.Row="8" />
+        <Canvas x:Name="s10z08"  Background="Black" Grid.Column="10" Grid.Row="8" />
+        <Canvas x:Name="s11z08"  Background="Black" Grid.Column="11" Grid.Row="8" />
+        <Canvas x:Name="s12z08"  Background="Black" Grid.Column="12" Grid.Row="8" />
+        <Canvas x:Name="s13z08"  Background="Black" Grid.Column="13" Grid.Row="8" />
+        <Canvas x:Name="s14z08"  Background="Black" Grid.Column="14" Grid.Row="8" />
+        <Canvas x:Name="s15z08"  Background="Black" Grid.Column="15" Grid.Row="8" />
+        <Canvas x:Name="s16z08"  Background="Black" Grid.Column="16" Grid.Row="8" />
+
+        <Canvas x:Name="s00z09"  Background="Black" Grid.Column="00" Grid.Row="9" />
+        <Canvas x:Name="s01z09"  Background="Black" Grid.Column="01" Grid.Row="9" />
+        <Canvas x:Name="s02z09"  Background="Black" Grid.Column="02" Grid.Row="9" />
+        <Canvas x:Name="s03z09"  Background="Black" Grid.Column="03" Grid.Row="9" />
+        <Canvas x:Name="s04z09"  Background="Black" Grid.Column="04" Grid.Row="9" />
+        <Canvas x:Name="s05z09"  Background="Black" Grid.Column="05" Grid.Row="9" />
+        <Canvas x:Name="s06z09"  Background="Black" Grid.Column="06" Grid.Row="9" />
+        <Canvas x:Name="s07z09"  Background="Black" Grid.Column="07" Grid.Row="9" />
+        <Canvas x:Name="s08z09"  Background="Black" Grid.Column="08" Grid.Row="9" />
+        <Canvas x:Name="s09z09"  Background="Black" Grid.Column="09" Grid.Row="9" />
+        <Canvas x:Name="s10z09"  Background="Black" Grid.Column="10" Grid.Row="9" />
+        <Canvas x:Name="s11z09"  Background="Black" Grid.Column="11" Grid.Row="9" />
+        <Canvas x:Name="s12z09"  Background="Black" Grid.Column="12" Grid.Row="9" />
+        <Canvas x:Name="s13z09"  Background="Black" Grid.Column="13" Grid.Row="9" />
+        <Canvas x:Name="s14z09"  Background="Black" Grid.Column="14" Grid.Row="9" />
+        <Canvas x:Name="s15z09"  Background="Black" Grid.Column="15" Grid.Row="9" />
+        <Canvas x:Name="s16z09"  Background="Black" Grid.Column="16" Grid.Row="9" />
+
+        <Canvas x:Name="s00z10"  Background="Black" Grid.Column="00" Grid.Row="10" />
+        <Canvas x:Name="s01z10"  Background="Black" Grid.Column="01" Grid.Row="10" />
+        <Canvas x:Name="s02z10"  Background="Black" Grid.Column="02" Grid.Row="10" />
+        <Canvas x:Name="s03z10"  Background="Black" Grid.Column="03" Grid.Row="10" />
+        <Canvas x:Name="s04z10"  Background="Black" Grid.Column="04" Grid.Row="10" />
+        <Canvas x:Name="s05z10"  Background="Black" Grid.Column="05" Grid.Row="10" />
+        <Canvas x:Name="s06z10"  Background="Black" Grid.Column="06" Grid.Row="10" />
+        <Canvas x:Name="s07z10"  Background="Black" Grid.Column="07" Grid.Row="10" />
+        <Canvas x:Name="s08z10"  Background="Black" Grid.Column="08" Grid.Row="10" />
+        <Canvas x:Name="s09z10"  Background="Black" Grid.Column="09" Grid.Row="10" />
+        <Canvas x:Name="s10z10"  Background="Black" Grid.Column="10" Grid.Row="10" />
+        <Canvas x:Name="s11z10"  Background="Black" Grid.Column="11" Grid.Row="10" />
+        <Canvas x:Name="s12z10"  Background="Black" Grid.Column="12" Grid.Row="10" />
+        <Canvas x:Name="s13z10"  Background="Black" Grid.Column="13" Grid.Row="10" />
+        <Canvas x:Name="s14z10"  Background="Black" Grid.Column="14" Grid.Row="10" />
+        <Canvas x:Name="s15z10"  Background="Black" Grid.Column="15" Grid.Row="10" />
+        <Canvas x:Name="s16z10"  Background="Black" Grid.Column="16" Grid.Row="10" />
+
+        <Canvas x:Name="s00z11"  Background="Black" Grid.Column="00" Grid.Row="11" />
+        <Canvas x:Name="s01z11"  Background="Black" Grid.Column="01" Grid.Row="11" />
+        <Canvas x:Name="s02z11"  Background="Black" Grid.Column="02" Grid.Row="11" />
+        <Canvas x:Name="s03z11"  Background="Black" Grid.Column="03" Grid.Row="11" />
+        <Canvas x:Name="s04z11"  Background="Black" Grid.Column="04" Grid.Row="11" />
+        <Canvas x:Name="s05z11"  Background="Black" Grid.Column="05" Grid.Row="11" />
+        <Canvas x:Name="s06z11"  Background="Black" Grid.Column="06" Grid.Row="11" />
+        <Canvas x:Name="s07z11"  Background="Black" Grid.Column="07" Grid.Row="11" />
+        <Canvas x:Name="s08z11"  Background="Black" Grid.Column="08" Grid.Row="11" />
+        <Canvas x:Name="s09z11"  Background="Black" Grid.Column="09" Grid.Row="11" />
+        <Canvas x:Name="s10z11"  Background="Black" Grid.Column="10" Grid.Row="11" />
+        <Canvas x:Name="s11z11"  Background="Black" Grid.Column="11" Grid.Row="11" />
+        <Canvas x:Name="s12z11"  Background="Black" Grid.Column="12" Grid.Row="11" />
+        <Canvas x:Name="s13z11"  Background="Black" Grid.Column="13" Grid.Row="11" />
+        <Canvas x:Name="s14z11"  Background="Black" Grid.Column="14" Grid.Row="11" />
+        <Canvas x:Name="s15z11"  Background="Black" Grid.Column="15" Grid.Row="11" />
+        <Canvas x:Name="s16z11"  Background="Black" Grid.Column="16" Grid.Row="11" />
+
+        <Canvas x:Name="s00z12"  Background="Black" Grid.Column="00" Grid.Row="12" />
+        <Canvas x:Name="s01z12"  Background="Black" Grid.Column="01" Grid.Row="12" />
+        <Canvas x:Name="s02z12"  Background="Black" Grid.Column="02" Grid.Row="12" />
+        <Canvas x:Name="s03z12"  Background="Black" Grid.Column="03" Grid.Row="12" />
+        <Canvas x:Name="s04z12"  Background="Black" Grid.Column="04" Grid.Row="12" />
+        <Canvas x:Name="s05z12"  Background="Black" Grid.Column="05" Grid.Row="12" />
+        <Canvas x:Name="s06z12"  Background="Black" Grid.Column="06" Grid.Row="12" />
+        <Canvas x:Name="s07z12"  Background="Black" Grid.Column="07" Grid.Row="12" />
+        <Canvas x:Name="s08z12"  Background="Black" Grid.Column="08" Grid.Row="12" />
+        <Canvas x:Name="s09z12"  Background="Black" Grid.Column="09" Grid.Row="12" />
+        <Canvas x:Name="s10z12"  Background="Black" Grid.Column="10" Grid.Row="12" />
+        <Canvas x:Name="s11z12"  Background="Black" Grid.Column="11" Grid.Row="12" />
+        <Canvas x:Name="s12z12"  Background="Black" Grid.Column="12" Grid.Row="12" />
+        <Canvas x:Name="s13z12"  Background="Black" Grid.Column="13" Grid.Row="12" />
+        <Canvas x:Name="s14z12"  Background="Black" Grid.Column="14" Grid.Row="12" />
+        <Canvas x:Name="s15z12"  Background="Black" Grid.Column="15" Grid.Row="12" />
+        <Canvas x:Name="s16z12"  Background="Black" Grid.Column="16" Grid.Row="12" />
+
+        <Canvas x:Name="s00z13"  Background="Black" Grid.Column="00" Grid.Row="13" />
+        <Canvas x:Name="s01z13"  Background="Black" Grid.Column="01" Grid.Row="13" />
+        <Canvas x:Name="s02z13"  Background="Black" Grid.Column="02" Grid.Row="13" />
+        <Canvas x:Name="s03z13"  Background="Black" Grid.Column="03" Grid.Row="13" />
+        <Canvas x:Name="s04z13"  Background="Black" Grid.Column="04" Grid.Row="13" />
+        <Canvas x:Name="s05z13"  Background="Black" Grid.Column="05" Grid.Row="13" />
+        <Canvas x:Name="s06z13"  Background="Black" Grid.Column="06" Grid.Row="13" />
+        <Canvas x:Name="s07z13"  Background="Black" Grid.Column="07" Grid.Row="13" />
+        <Canvas x:Name="s08z13"  Background="Black" Grid.Column="08" Grid.Row="13" />
+        <Canvas x:Name="s09z13"  Background="Black" Grid.Column="09" Grid.Row="13" />
+        <Canvas x:Name="s10z13"  Background="Black" Grid.Column="10" Grid.Row="13" />
+        <Canvas x:Name="s11z13"  Background="Black" Grid.Column="11" Grid.Row="13" />
+        <Canvas x:Name="s12z13"  Background="Black" Grid.Column="12" Grid.Row="13" />
+        <Canvas x:Name="s13z13"  Background="Black" Grid.Column="13" Grid.Row="13" />
+        <Canvas x:Name="s14z13"  Background="Black" Grid.Column="14" Grid.Row="13" />
+        <Canvas x:Name="s15z13"  Background="Black" Grid.Column="15" Grid.Row="13" />
+        <Canvas x:Name="s16z13"  Background="Black" Grid.Column="16" Grid.Row="13" />
+
+        <Canvas x:Name="s00z14"  Background="Black" Grid.Column="00" Grid.Row="14" />
+        <Canvas x:Name="s01z14"  Background="Black" Grid.Column="01" Grid.Row="14" />
+        <Canvas x:Name="s02z14"  Background="Black" Grid.Column="02" Grid.Row="14" />
+        <Canvas x:Name="s03z14"  Background="Black" Grid.Column="03" Grid.Row="14" />
+        <Canvas x:Name="s04z14"  Background="Black" Grid.Column="04" Grid.Row="14" />
+        <Canvas x:Name="s05z14"  Background="Black" Grid.Column="05" Grid.Row="14" />
+        <Canvas x:Name="s06z14"  Background="Black" Grid.Column="06" Grid.Row="14" />
+        <Canvas x:Name="s07z14"  Background="Black" Grid.Column="07" Grid.Row="14" />
+        <Canvas x:Name="s08z14"  Background="Black" Grid.Column="08" Grid.Row="14" />
+        <Canvas x:Name="s09z14"  Background="Black" Grid.Column="09" Grid.Row="14" />
+        <Canvas x:Name="s10z14"  Background="Black" Grid.Column="10" Grid.Row="14" />
+        <Canvas x:Name="s11z14"  Background="Black" Grid.Column="11" Grid.Row="14" />
+        <Canvas x:Name="s12z14"  Background="Black" Grid.Column="12" Grid.Row="14" />
+        <Canvas x:Name="s13z14"  Background="Black" Grid.Column="13" Grid.Row="14" />
+        <Canvas x:Name="s14z14"  Background="Black" Grid.Column="14" Grid.Row="14" />
+        <Canvas x:Name="s15z14"  Background="Black" Grid.Column="15" Grid.Row="14" />
+        <Canvas x:Name="s16z14"  Background="Black" Grid.Column="16" Grid.Row="14" />
+
+        <Canvas x:Name="s00z15"  Background="Black" Grid.Column="00" Grid.Row="15" />
+        <Canvas x:Name="s01z15"  Background="Black" Grid.Column="01" Grid.Row="15" />
+        <Canvas x:Name="s02z15"  Background="Black" Grid.Column="02" Grid.Row="15" />
+        <Canvas x:Name="s03z15"  Background="Black" Grid.Column="03" Grid.Row="15" />
+        <Canvas x:Name="s04z15"  Background="Black" Grid.Column="04" Grid.Row="15" />
+        <Canvas x:Name="s05z15"  Background="Black" Grid.Column="05" Grid.Row="15" />
+        <Canvas x:Name="s06z15"  Background="Black" Grid.Column="06" Grid.Row="15" />
+        <Canvas x:Name="s07z15"  Background="Black" Grid.Column="07" Grid.Row="15" />
+        <Canvas x:Name="s08z15"  Background="Black" Grid.Column="08" Grid.Row="15" />
+        <Canvas x:Name="s09z15"  Background="Black" Grid.Column="09" Grid.Row="15" />
+        <Canvas x:Name="s10z15"  Background="Black" Grid.Column="10" Grid.Row="15" />
+        <Canvas x:Name="s11z15"  Background="Black" Grid.Column="11" Grid.Row="15" />
+        <Canvas x:Name="s12z15"  Background="Black" Grid.Column="12" Grid.Row="15" />
+        <Canvas x:Name="s13z15"  Background="Black" Grid.Column="13" Grid.Row="15" />
+        <Canvas x:Name="s14z15"  Background="Black" Grid.Column="14" Grid.Row="15" />
+        <Canvas x:Name="s15z15"  Background="Black" Grid.Column="15" Grid.Row="15" />
+        <Canvas x:Name="s16z15"  Background="Black" Grid.Column="16" Grid.Row="15" />
+
+    </Grid>
+</Window>
