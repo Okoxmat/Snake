@@ -49,12 +49,6 @@ namespace Snake
             NewGame();
         }
 
-
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
         private void NewGame()
         {
             //Array mit 256 leeren Feldern
